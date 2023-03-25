@@ -82,7 +82,12 @@ h2 {
 }
 
 #projects h3 {
-	font-size: 24px;
+	font-size: 20px;
+	margin: 10px;
+}
+
+#projects h4 {
+	font-size: 14px;
 	margin: 10px;
 }
 
@@ -124,7 +129,7 @@ h2 {
 	}
 
 	#projects li {
-		height: 250px;
+		height: 270px;
 	}
 
 	#projects img {
