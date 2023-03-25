@@ -1,74 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-gb">
-
+<html>
 <head>
+	<title>My Portfolio</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sumayyah Mosafeer // Web Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-  <!-- main logo / nav -->
-  <!-- <header>
-    <h1>Sumayyah Mosafeer</h1> -->
-    <!-- <nav>
-        <ul id="nav">
-            <li>
-                <a href="aboutMe">About Me</a>
-            </li>
-            <li>
-                <a href="work">Work</a>
-            </li>
-            <li>
-                <a href="contactMe">Contact Me</a>
-            </li>
-            <li>
-                <a href="resume">Resume</a>
-            </li>
-        </ul>
-    </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Sumayyah Mosafeer</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="aboutMe">About Me<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="work">Work</a>
-          <a class="nav-item nav-link" href="contactMe">Contact Me</a>
-          <a class="nav-item nav-link disabled" href="resume">Resume</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+	<header>
+    <img src="images\Daria_Logo.svg.png" alt="Avatar">
+		<h1>My Portfolio</h1>
+    <nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
+  <main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>My name is Sumayyah Mosafeer. This is my portfolio. At the moment, I have X projects that I have been working on. I made this as part of the course I am currently doing. So far, I have used HTML and CSS, but will be learning about bootstrap and javascript soon so that I can implement that into my work.</p>
+		</section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+		<section id="projects">
+			<h2>My Projects</h2>
+			<ul>
+				<li>
+					<a href="https://tina4126.github.io/Contact-information-page/">
+            <h3>Contact Information Page</h3>
+						<img src="images\contact info.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="https://tina4126.github.io/pathos/">
+            <h3>Pathos</h3>
+						<img src="images\pathos.jpg">
+					</a>
+				</li>
+				<li>
+					<a href=" https://tina4126.github.io/Accessibility-challenge/">
+            <h3>Accessibility Challenge</h3>
+						<img src="images\accessibilty challenge.jpg">
+					</a>
+				</li>
+        <li>
+					<a href="https://tina4126.github.io/password-generator/">
+            <h3>Password Generator</h3>
+						<img src="images\password generator.jpg">
+					</a>
+				</li>
+			</ul>
+		</section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+
+  
+	<footer>
+		<p>&copy; 2023 My Portfolio</p>
+	</footer>
+
 </body>
-
 </html>
